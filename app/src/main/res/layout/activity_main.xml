@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/fon"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/liner1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_1"
+                android:layout_width="250dp"
+                android:layout_height="120dp"
+                android:src="@drawable/yuzming"
+                app:layout_constraintBottom_toTopOf="@id/img_2"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/img_2"
+                android:layout_width="250dp"
+                android:layout_height="120dp"
+                android:src="@drawable/ellikmingsom"
+                app:layout_constraintBottom_toTopOf="@id/img_3"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/img_1" />
+
+            <ImageView
+                android:id="@+id/img_3"
+                android:layout_width="250dp"
+                android:layout_height="120dp"
+                android:src="@drawable/onmingsom"
+                app:layout_constraintBottom_toTopOf="@id/img_4"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/img_2" />
+
+
+            <ImageView
+                android:id="@+id/img_4"
+                android:layout_width="250dp"
+                android:layout_height="120dp"
+                android:src="@drawable/beshmingsom"
+                app:layout_constraintBottom_toTopOf="@id/img_5"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/img_3" />
+
+            <ImageView
+                android:id="@+id/img_5"
+                android:layout_width="250dp"
+                android:layout_height="120dp"
+                android:src="@drawable/mingsom"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/img_4" />
+
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/txt_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:text="0 ta"
+                android:textColor="@color/white"
+                android:textSize="39sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="@id/img_1"
+                app:layout_constraintBottom_toBottomOf="@id/img_1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/img_1"/>
+
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/txt_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:text="0 ta"
+                android:textColor="@color/white"
+                android:textSize="39sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="@id/img_2"
+                app:layout_constraintBottom_toBottomOf="@id/img_2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/img_2" />
+
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/txt_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:text="0 ta"
+                android:textColor="@color/white"
+                android:textSize="39sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="@id/img_3"
+                app:layout_constraintBottom_toBottomOf="@id/img_3"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/img_3"/>
+
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/txt_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:text="0 ta"
+                android:textColor="@color/white"
+                android:textSize="39sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="@id/img_4"
+                app:layout_constraintBottom_toBottomOf="@id/img_4"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/img_4"/>
+
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/txt_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:text="0 ta"
+                android:textColor="@color/white"
+                android:textSize="39sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="@id/img_5"
+                app:layout_constraintBottom_toBottomOf="@id/img_5"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/img_5"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/liner2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputLayout
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomEnd="13dp"
+                app:boxBackgroundColor="@color/white"
+                app:boxCornerRadiusBottomStart="13dp"
+                app:boxCornerRadiusTopEnd="13dp"
+                app:boxCornerRadiusTopStart="13dp"
+                android:textColorHint="@color/black"
+                android:gravity="center"
+                android:layout_width="0dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/btn"
+                android:hint="Miqdorni kiriting"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_txt"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:inputType="number"
+                    android:fontFamily="monospace"
+                    android:textSize="20sp"
+                    android:layout_marginHorizontal="13dp"
+                    android:layout_height="match_parent"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="13dp"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:fontFamily="monospace"
+                android:text="Hisoblash"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/edt_txt"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
